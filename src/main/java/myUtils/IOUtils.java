@@ -6,7 +6,7 @@ public class IOUtils {
 
     //读取文件内容并返回装有内容的字符串
     public static String readTxt(String txtPath){
-        String str = "";
+        StringBuilder str = new StringBuilder();
         String strLine;
         // 将 txt文件按行读入 str中
         File file = new File(txtPath);
@@ -17,7 +17,7 @@ public class IOUtils {
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
             // 字符串拼接
             while ((strLine = bufferedReader.readLine()) != null) {
-                str += strLine;
+                str.append(strLine);
             }
             // 关闭资源
             inputStreamReader.close();
@@ -26,7 +26,7 @@ public class IOUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return str;
+        return str.toString();
     }
 
 
