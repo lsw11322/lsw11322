@@ -21,6 +21,6 @@ public class HammingUtils {
 
     //通过海明距离计算相似度
     public static double getSimilarity(int distance){
-        return 0.01 * (100 - distance * 100 / 128.0);
+        return 0.01 * (100 - distance * 100.0 / 128);
     }
 }

@@ -14,6 +14,8 @@ public class main {
         double similarity = HammingUtils.getSimilarity(HammingUtils.getHammingDistance(simHash1, simHash2));
         //输出相似度到目标文件
         IOUtils.writeTxt(similarity, args[2]);
+        //退出程序
+        System.exit(0);
 
     }
 
