@@ -3,7 +3,7 @@ import myUtils.HammingUtils;
 import myUtils.IOUtils;
 import myUtils.SimHashUtils;
 
-public class mainTest {
+public class MainTest {
 
     @Test
     //测试原文件与所有测试文件的相似度

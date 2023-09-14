@@ -2,7 +2,7 @@ import myUtils.HammingUtils;
 import myUtils.IOUtils;
 import myUtils.SimHashUtils;
 
-public class main {
+public class Main {
     public static void main(String[] args){
         //获取文件内容对应字符串
         String str1 = IOUtils.readTxt(args[0]);

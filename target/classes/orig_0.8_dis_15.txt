@@ -468,13 +468,13 @@
 
 
   <div
-    class="application-main "
+    class="application-Main "
     data-commit-hovercards-enabled
     data-discussion-hovercards-enabled
     data-issue-and-pr-hovercards-enabled
   >
         <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
-    <main  >
+    <Main  >
       
 
     
@@ -2273,7 +2273,7 @@
   </div>
 </div>
 
-    </main>
+    </Main>
   </div>
 
   </div>
