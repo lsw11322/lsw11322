@@ -24,6 +24,7 @@ public class IOUtils {
             bufferedReader.close();
             fileInputStream.close();
         } catch (IOException e) {
+            //打印异常信息
             e.printStackTrace();
         }
         return str.toString();

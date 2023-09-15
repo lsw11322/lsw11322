@@ -30,5 +30,4 @@ public class HammingUtilsTest  {
         System.out.println("str0和str1的相似度:" + similarity);
     }
 
-
 }
