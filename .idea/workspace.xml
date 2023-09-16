@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f09efc92-f890-4039-b670-d8d36b286cde" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/main_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/main_jar/main.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myUtils/HammingUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myUtils/IOUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myUtils/SimHashUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orig.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orig_0.8_add.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orig_0.8_del.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orig_0.8_dis_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orig_0.8_dis_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orig_0.8_dis_15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/myUtils/HammingUtilsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/myUtils/IOUtilsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/myUtils/SimHashUtilsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/writeTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myUtils/HammingUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myUtils/IOUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myUtils/SimHashUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orig.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orig_0.8_add.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orig_0.8_del.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orig_0.8_dis_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orig_0.8_dis_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orig_0.8_dis_15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/myUtils/HammingUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/myUtils/IOUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/myUtils/SimHashUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/writeTest.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2VT9jkXxFHIgvybvTn1nelZJaC5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="f09efc92-f890-4039-b670-d8d36b286cde" name="变更" comment="" />
+      <created>1694849343293</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694849343293</updated>
+      <workItem from="1694849349033" duration="73000" />
+      <workItem from="1694849543773" duration="782000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
