@@ -66,7 +66,7 @@ public class CreateFraction {
         String res = shamToProperFraction(x, y);
         s += " " + "=";
 
-        String formulaRes[] = {s, res};
+        String[] formulaRes = {s, res};
         return formulaRes;
     }
 
@@ -90,9 +90,8 @@ public class CreateFraction {
 
     /**
      * 生成一对互质数
-     *
-     * @param range
-     * @param random
+     * @param range 数的取值范围
+     * @param random 随机
      * @return 一对互质数
      */
     public int[] createCoprimeNumbers(int range, Random random) {
@@ -101,8 +100,8 @@ public class CreateFraction {
         int greatFraction = greatFraction(x, y);
         x /= greatFraction;
         y /= greatFraction;
-        int numbers[] = {x, y};
-        return numbers;
+        int[] nums = {x, y};
+        return nums;
     }
 
     /**

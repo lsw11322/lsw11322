@@ -8,7 +8,7 @@ import java.util.Stack;
  */
 public class Calculator {
     public int calculate(int a, int b, String stmp) { //计算a stmp b的值
-        //存结果
+        //储存结果
         int res = 0;
         char s = stmp.charAt(0);
         switch (s) {
@@ -26,9 +26,9 @@ public class Calculator {
                 break;
             }
             case '÷': {
-                if(b == 0) {
+                if (b == 0) {
                     return -1;
-                } else if(a%b!=0) {
+                } else if (a % b != 0) {
                     //产生小数就不合格
                     return -2;
                 } else {
@@ -36,7 +36,7 @@ public class Calculator {
                 }
                 break;
             }
-            default:{
+            default: {
                 System.out.println("抱歉，出现运算错误！");
             }
 
@@ -46,10 +46,11 @@ public class Calculator {
 
     /**
      * 计算出算式结果(仅用于整数计算)
-     * @param s 算式
+     *
+     * @param str 算式
      * @return 栈底数字，即算式答案
      */
-    public int algorithm(String s) {
+    public int algorithm(String str) {
         //放数字
         Stack<Integer> numStack = new Stack<>();
         //放操作符
@@ -62,9 +63,9 @@ public class Calculator {
         hashMap.put("*", 2);
         hashMap.put("÷", 2);
         //将算式中的空格去除
-        String formula = s.replaceAll(" ", "");
+        String formula = str.replaceAll(" ", "");
         //逆波兰算法
-        for (int i = 0; i < formula.length();) {
+        for (int i = 0; i < formula.length(); ) {
             StringBuilder digit = new StringBuilder();
             //将式子字符串切割为c字符
             char c = formula.charAt(i);
@@ -72,14 +73,14 @@ public class Calculator {
             while (Character.isDigit(c)) {
                 digit.append(c);
                 i++;
-                if (i < formula.length()){
+                if (i < formula.length()) {
                     c = formula.charAt(i);
-                }else {
+                } else {
                     break;
                 }
             }
             //当前digit里面已经无数字，即当前处理符号
-            if (digit.length() == 0){
+            if (digit.length() == 0) {
                 switch (c) {
                     case '(': {
                         //如果是(则转化为字符串压入字符栈
@@ -98,8 +99,8 @@ public class Calculator {
                             //计算
                             int result = calculate(b, a, stmp);
                             //要求运算过程不能出现负数
-                            if(result < 0) {
-                                return  -1;
+                            if (result < 0) {
+                                return -1;
                             }
                             //将结果压入栈
                             numStack.push(result);
@@ -117,15 +118,15 @@ public class Calculator {
                             int a = numStack.pop();
                             int b = numStack.pop();
                             int result = calculate(b, a, stmp);
-                            if(result < 0) {
-                                return  -1;
+                            if (result < 0) {
+                                return -1;
                             }
                             numStack.push(result);
                         }
                         break;
                     }
                     default: {  //不满足之前的任何情况
-                        String stmp ;
+                        String stmp;
                         //如果符号栈有符号
                         while (!operatorStack.isEmpty()) {
                             //当前符号栈，栈顶元素
@@ -134,13 +135,12 @@ public class Calculator {
                             if (hashMap.get(stmp) >= hashMap.get(String.valueOf(c))) {
                                 int a = numStack.pop();
                                 int b = numStack.pop();
-                                int result =calculate (b, a, stmp);
-                                if(result < 0) {
-                                    return  -1;
+                                int result = calculate(b, a, stmp);
+                                if (result < 0) {
+                                    return -1;
                                 }
                                 numStack.push(result);
-                            }
-                            else {
+                            } else {
                                 operatorStack.push(stmp);
                                 break;
                             }
@@ -151,8 +151,7 @@ public class Calculator {
                         break;
                     }
                 }
-            }
-            else { //处理数字，直接压栈
+            } else { //处理数字，直接压栈
                 //Integer.valueof()返回的是Integer对象，而Integer.parseInt()返回的是int型
                 numStack.push(Integer.valueOf(digit.toString()));
                 //结束本次循环，回到for语句进行下一次循环，即不执行i++(因为此时i已经指向符号了)

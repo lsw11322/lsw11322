@@ -18,9 +18,9 @@ public class JudgeAnswer {
             System.out.println("请根据如下格式输入！");
             System.out.println("-e 题目文件 -a 答案文件");
             Scanner scanner = new Scanner(System.in);
-            String str1 = scanner.nextLine();
-            String[] parameters1 = str1.split(" ");
-            check(parameters1[1], parameters1[3]);
+            String str = scanner.nextLine();
+            String[] para = str.split(" ");
+            check(para[1], para[3]);
         }catch (Exception e){
             System.out.println("请按指定格式输入！\n\n\n");
             getPath();
@@ -29,21 +29,21 @@ public class JudgeAnswer {
 
     /**
      * 输出作答对错
-     * @param exerciseFilePath 作答文件路径
-     * @param answerFilePath 答案文件路径
+     * @param exePath 作答文件路径
+     * @param ansPath 答案文件路径
      */
-    public void check(String exerciseFilePath, String answerFilePath){
+    public void check(String exePath, String ansPath){
         try{
-            List<String> exerciseAnswers = exerciseFileReader(exerciseFilePath);
-            List<String> answers = answerFileReader(answerFilePath);
+            List<String> exeAnswers = exerciseFileReader(exePath);
+            List<String> answers = answerFileReader(ansPath);
 
             List<String> correct = new ArrayList<>();
             List<String> wrong = new ArrayList<>();
 
-            int min = Math.min(exerciseAnswers.size(),answers.size());
+            int min = Math.min(exeAnswers.size(),answers.size());
             int num = 1;
             for(int i = 0;i<min;i++){
-                if(exerciseAnswers.get(i).equals(answers.get(i))){
+                if(exeAnswers.get(i).equals(answers.get(i))){
                     correct.add(String.valueOf(num++));
                 }else{
                     wrong.add(String.valueOf(num++));
@@ -54,12 +54,12 @@ public class JudgeAnswer {
                 grade.delete();
             }
             if(grade.createNewFile()){
-                FileOutputStream gradeOutPut = new FileOutputStream(grade);
-                PrintStream gradePrint = new PrintStream(gradeOutPut);
+                FileOutputStream output_grade = new FileOutputStream(grade);
+                PrintStream print_grade = new PrintStream(output_grade);
                 String corrects = String.join(", ",correct);
-                gradePrint.println("Correct：" + correct.size() + " (" + corrects + ")");
+                print_grade.println("Correct：" + correct.size() + " (" + corrects + ")");
                 String wrongs = String.join(", ",wrong);
-                gradePrint.println("Wrong：" + wrong.size() + " (" + wrongs + ")");
+                print_grade.println("Wrong：" + wrong.size() + " (" + wrongs + ")");
                 System.out.println("已批改");
             }
         } catch (FileNotFoundException e) {

@@ -14,14 +14,14 @@ public class Producer {
 
 
     public void constructProblem() {
-        System.out.println("----------欢迎来到四则运算生成器----------\n");
+        System.out.println("-------------四则运算生成器-------------\n");
         try {
             System.out.println("请根据如下格式输入！");
             System.out.println("-n 生成题目的个数 -r 题目数值的范围");
             Scanner scanner = new Scanner(System.in);
-            String str1 = scanner.nextLine();
-            String[] parameters1 = str1.split(" ");
-            generateProblem(Integer.parseInt(parameters1[1]), Integer.parseInt(parameters1[3]));
+            String str = scanner.nextLine();
+            String[] para = str.split(" ");
+            generateProblem(Integer.parseInt(para[1]), Integer.parseInt(para[3]));
         } catch (Exception e) {
             System.out.println("请按指定格式输入！\n\n\n");
             constructProblem();
@@ -79,7 +79,7 @@ public class Producer {
             var[0].println(i + ". " + problem[0]);
             var[1].println(i + ". " + problem[1]);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("抱歉，出现了意料之外的问题");
+            System.out.println("出现异常");
         }
     }
 }

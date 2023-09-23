@@ -75,7 +75,7 @@ public class CreateInteger {
      * @param operatorIndex 运算符下标
      * @return 算式
      */
-    public String stitchingFormula(int operatorCount, int operand[], int[] operatorIndex) {
+    public String stitchingFormula(int operatorCount, int[] operand, int[] operatorIndex) {
         //式子形态
         int bracketForm = new Random().nextInt(2);
         StringBuilder formula = new StringBuilder();
