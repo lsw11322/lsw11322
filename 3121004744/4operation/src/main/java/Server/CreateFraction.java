@@ -18,8 +18,10 @@ public class CreateFraction {
 
         //生成第一个操作数
         int[] coprimeNumber1 = createCoprimeNumbers(range, random);
-        int x = coprimeNumber1[0];//分子
-        int y = coprimeNumber1[1];//分母
+        //分子
+        int x = coprimeNumber1[0];
+        //分母
+        int y = coprimeNumber1[1];
 
         String s = shamToProperFraction(x, y);
 
@@ -43,6 +45,7 @@ public class CreateFraction {
                     numx = coprimeNumber[0];
                     numy = coprimeNumber[1];
                     count++;
+                    //构造5次都不满足则执行如下操作
                     if (count >= 5) {
                         numx = x - 1;
                         numy = y;

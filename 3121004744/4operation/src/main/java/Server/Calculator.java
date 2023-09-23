@@ -7,7 +7,7 @@ import java.util.Stack;
  * @author lsw
  */
 public class Calculator {
-    private int calculate(int a, int b, String stmp) { //计算a stmp b的值
+    public int calculate(int a, int b, String stmp) { //计算a stmp b的值
         //存结果
         int res = 0;
         char s = stmp.charAt(0);
