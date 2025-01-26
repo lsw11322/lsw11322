@@ -1,5 +1,5 @@
 ### Hi there 👋
-我是就读于广东工业大学计算机学院的一名大三学生，请多多指教！
+我是就读于广东工业大学计算机学院的一名大四学生，请多多指教！
 <!--
 **lsw11322/lsw11322** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
