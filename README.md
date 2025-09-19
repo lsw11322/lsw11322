@@ -1,5 +1,5 @@
 ### Hi there 👋
-就读于广东工业大学计算机学院，请多多指教！
+目前研一，请多多指教！
 <!--
 **lsw11322/lsw11322** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
